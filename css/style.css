@@ -1,17 +1,37 @@
 * {
-    font-family: sans-serif;
     margin: 0;
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    font-family: sans-serif;
+    background-color: #ccc;
     color: #333;
 }
 
 
+.iconWhatsapp {
+    padding: 2px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #1b3;
+    border-radius: 50%;
+    position: fixed;
+    left: 1%;
+    bottom: 1%;
+    z-index: 50;
+}
+
+.iconWhatsapp img {
+    width: 50px;
+}
+
+
 /* Header Section */
+
 header {
     background-color: #000;
     display: flex;
@@ -55,8 +75,8 @@ header .headerCheckbox {
     height: 40vh;
     margin: auto;
     justify-content: space-evenly;
-    font-size: 20px;
 }
+
 
 .btn {
     padding: 10px;
@@ -65,6 +85,7 @@ header .headerCheckbox {
     border-radius: 6px;
     letter-spacing: 3px;
     position: relative;
+    font-size: 16px;
 }
 
 .btn-1 {
@@ -74,7 +95,7 @@ header .headerCheckbox {
 
 .btn-1::before {
     content: '';
-    background-color: #666;
+    background-color: #ccc;
     display: block;
     height: 200%;
     width: 150%;
@@ -82,14 +103,15 @@ header .headerCheckbox {
     z-index: 10;
     transition: top .8s, left .8s;
     border-radius: 50%;
-    top: 80%;
+    top: 85%;
     left: 30%;
 }
 
 .btn-1:hover::before {
     top: -120%;
-    left: -142%;
-    background-color: #666;
+    left: -135%;
+    background: linear-gradient(#000 90%, #666);
+    box-shadow: 0 0 10px #666;
 }
 
 .btn:hover {
@@ -97,7 +119,7 @@ header .headerCheckbox {
 }
 
 
-.headerCheckbox:checked ~ .navbar {
+.headerCheckbox:checked~.navbar {
     display: flex;
 }
 
@@ -143,26 +165,69 @@ header .headerCheckbox {
 
 /* End of header section */
 
+
+
+/* Main section */
+
+main {
+    padding: 40px;
+}
+
 .section {
     padding: 40px;
+    padding-bottom: 80px;
     text-align: center;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 2px solid #aaa;
+
+        h2,
+        p {
+            padding-top: 40px;
+        }
+
+        h2 {
+            font-size: 25px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+}
+
+.section-2 {
+    text-align: center;
+    padding-bottom: 80px;
+
+
+        h2 {
+            padding: 50px 0;
+        }
+
+        h3,
+        p {
+            padding-top: 12px;
+        }
 }
 
 .productos {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 50px;
 }
+
 
 .producto img {
     width: 100%;
     max-width: 300px;
     height: 300px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px #666;
     object-fit: cover;
+    transition: transform .25s;
+}
+
+.producto img:hover {
+    transform: translateY(-10px);
 }
 
 .producto {
@@ -170,44 +235,80 @@ header .headerCheckbox {
     border: 1px solid #ddd;
     padding: 20px;
     text-align: center;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px #666;
     width: 300px;
+    transition: background .25s;
+}
+
+.producto:hover {
+    background: radial-gradient(#aaaf, #cccf);
+}
+
+.section-3 {
+    padding: 50px 0;
+    border-top: 2px solid #aaa;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    .container-contact {
+        padding: 20px;
+        width: 500px;
+        background: linear-gradient( #000 92%, #ccc 50%);
+        margin: auto;
+        border-radius: 40% 2%;
+        transition: 20s;
+    }
+}
+
+.container-contact h2 {
+    text-align: center;
+    margin: 30px 0;
+    color: #ececec;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    align-items: center;
     max-width: 400px;
     margin: 0 auto;
 }
 
-form label, form input, form textarea, form button {
-    width: 100%;
-    margin-bottom: 10px;
+form label {
+    margin-bottom: 8px;
+    color: #aaa;
 }
 
-form input, form textarea {
+form input,
+form textarea{
+    width: 100%;
+    margin-bottom: 40px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #ddd;
 }
+
 
 form button {
-    background-color: #444;
+    background: linear-gradient( #000 85%, #ccc 50%);
+    box-shadow: 0 0 10px #333;
     color: #fff;
     border: none;
-    padding: 10px;
+    padding: 13px;
     cursor: pointer;
+    width: 30%;
+    margin: auto;
+    border-radius: 10px;
 }
 
-footer {
-    background-color: #444;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
+form button:hover {
+    background: #ccc;
+    color: #000;
 }
+
 
 @media (max-width: 768px) {
     .productos {
@@ -215,3 +316,72 @@ footer {
         align-items: center;
     }
 }
+
+/* End of Main section */
+
+
+/* Footer section */
+
+footer {
+    background-color: #000;
+    color: #fff;
+    max-width: 100%;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.icons img {
+    margin-right: 20px;
+    cursor: pointer;
+    width: 30px;
+    transition: transform .25s;
+}
+
+.icons img:hover {
+    transform: translateY(-5px);
+}
+
+.container-footer img {
+    font-size: 55px;
+}
+
+.footerContact h4 {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footerContact p {
+    color: #aaa;
+}
+
+.email {
+    border-top: 2px solid #fff;
+    margin-top: 10px;
+}
+
+.copyright {
+    margin-top: 7%;
+    margin-bottom: 0;
+    color: #555;
+}
+
+.footerContact, .footerContact h4, .footerContact p {
+    margin-top: 2%;
+}
+
+/* Footer Queries */
+@media (min-width: 600px) {
+    .footerContact h4 {
+        font-size: 1.4rem;
+    }
+
+    .footerContact p {
+        font-size: 1.2rem;
+    }
+
+    .copyright {
+        font-size: 1.2rem;
+    }
+}
+

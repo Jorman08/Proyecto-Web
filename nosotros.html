@@ -9,6 +9,11 @@
     <link rel="icon" href="img/logo.png">
 </head>
 <body>
+
+    <div class="iconWhatsapp">
+        <img src="img/whatsapp.svg" alt="No tiene internet">
+    </div>
+
     <header>
         <input type="checkbox" class="headerCheckbox" id="menu">
         <label for="menu" class="headerOpen-nav-button" role="button">=</label>
@@ -22,7 +27,7 @@
                 <a href="index.html"><button class="btn btn-1">Inicio</button></a>
                 <a href="index.html"><button class="btn btn-1">Catálogo</button></a>
                 <a href="nosotros.html"><button class="btn btn-1">Nosotros</button></a>
-                <a href="index.html"><button class="btn btn-1">Contacto</button></a>
+                <a href="#contacto"><button class="btn btn-1">Contacto</button></a>
 
             </ul>
         </nav>
@@ -40,11 +45,9 @@
             <h2>Nuestra Filosofía</h2>
             <img src="img/calidad.png" alt="Calidad y Estilo" class="imagen-sobre-nosotros">
             <p>Creemos que la moda no solo se trata de ropa, sino de una forma de expresar tu identidad. Nuestra filosofía se basa en tres pilares:</p>
-            <ul>
-                <li><strong>Calidad:</strong> Garantizamos prendas hechas para durar, utilizando materiales premium.</li>
-                <li><strong>Sostenibilidad:</strong> Trabajamos con proveedores que comparten nuestro compromiso con el medio ambiente.</li>
-                <li><strong>Confianza:</strong> Ofrecemos un servicio excepcional para asegurar tu satisfacción.</li>
-            </ul>
+                <p><strong>Calidad:</strong> Garantizamos prendas hechas para durar, utilizando materiales premium.</p>
+                <p><strong>Sostenibilidad:</strong> Trabajamos con proveedores que comparten nuestro compromiso con el medio ambiente.</p>
+                <p><strong>Confianza:</strong> Ofrecemos un servicio excepcional para asegurar tu satisfacción.</p>
         </section>
 
         <section class="section">
@@ -55,9 +58,32 @@
         </section>
     </main>
 
-    <footer>
-        <p>© 2025 Tienda de Ropa Exclusiva. Todos los derechos reservados.</p>
-        <p>Teléfono: +57 310 123 4567 | Email: contacto@tiendaderopa.com</p>
-    </footer>
+    <footer id="contacto">
+        <div class="container-footer">
+            <div class="icons">
+                <img src="img/icon-facebook.png" alt="No tiene internet">
+                <img src="img/icon-instagram.png" alt="No tiene internet">
+                <img src="img/twitter.svg" alt="No tiene internet">
+            </div>
+
+            <div class="footerContact email">
+                <h4>Correo</h4>
+                <p>
+                    contacto@tiendaderopa.com
+                </p>
+            </div>
+
+            <div class="footerContact">
+                <h4>Teléfono</h4>
+                <p>
+                    Teléfono: +57 310 123 4567
+                </p>
+            </div>
+
+            <p class="copyright">
+                © 2025 Tienda de Ropa Exclusiva. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer> 
 </body>
 </html>

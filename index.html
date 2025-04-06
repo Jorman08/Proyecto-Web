@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda de Ropa Exclusiva</title>
-    <meta name="description" content="Descubre las últimas tendencias en moda en Tienda de Ropa Exclusiva. Ofrecemos camisetas, pantalones, chaquetas y mucho más.">
+    <meta name="description"
+        content="Descubre las últimas tendencias en moda en Tienda de Ropa Exclusiva. Ofrecemos camisetas, pantalones, chaquetas y mucho más.">
     <meta name="keywords" content="moda, ropa, tienda de ropa, camisetas, pantalones, chaquetas">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/logo.png">
 </head>
+
 <body>
+
+    <div class="iconWhatsapp">
+        <img src="img/whatsapp.svg" alt="No tiene internet">
+    </div>
+
     <header>
         <input type="checkbox" class="headerCheckbox" id="menu">
         <label for="menu" class="headerOpen-nav-button" role="button">=</label>
@@ -27,13 +35,15 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <section id="inicio" class="section">
-            <h2>Bienvenidos a Tienda de Ropa Exclusiva</h2>
-            <p>Tu destino para las últimas tendencias en moda y estilo. Aquí encontrarás ropa de la mejor calidad para todas las ocasiones.</p>
+            <h2>Bienvenidos a URBAN</h2>
+            <p>Tu destino para las últimas tendencias en moda y estilo. Aquí encontrarás ropa de la mejor calidad para
+                todas las ocasiones.</p>
         </section>
 
-        <section id="catalogo" class="section">
+        <section id="catalogo" class="section-2">
             <h2>Catálogo</h2>
             <div class="productos">
                 <div class="producto">
@@ -87,23 +97,49 @@
             </div>
         </section>
 
-        <section id="contacto" class="section">
-            <h2>Contáctanos</h2>
-            <form>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre aquí" required>
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
+        <section class="section-3">
+            <div class="container-contact">
+                <h2>Contáctanos</h2>
+                <form>
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre aquí" required>
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>© 2025 Tienda de Ropa Exclusiva. Todos los derechos reservados.</p>
-        <p>Teléfono: +57 310 123 4567 | Email: contacto@tiendaderopa.com</p>
+    <footer id="contacto">
+        <div class="container-footer">
+            <div class="icons">
+                <img src="img/icon-facebook.png" alt="No tiene internet">
+                <img src="img/icon-instagram.png" alt="No tiene internet">
+                <img src="img/twitter.svg" alt="No tiene internet">
+            </div>
+
+            <div class="footerContact email">
+                <h4>Correo</h4>
+                <p>
+                    contacto@tiendaderopa.com
+                </p>
+            </div>
+
+            <div class="footerContact">
+                <h4>Teléfono</h4>
+                <p>
+                    Teléfono: +57 310 123 4567
+                </p>
+            </div>
+
+            <p class="copyright">
+                © 2025 Tienda de Ropa Exclusiva. Todos los derechos reservados.
+            </p>
+        </div>
     </footer>
 </body>
+
 </html>
