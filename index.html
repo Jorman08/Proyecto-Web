@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa Exclusiva</title>
+    <meta name="description" content="Descubre las últimas tendencias en moda en Tienda de Ropa Exclusiva. Ofrecemos camisetas, pantalones, chaquetas y mucho más.">
+    <meta name="keywords" content="moda, ropa, tienda de ropa, camisetas, pantalones, chaquetas">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/logo.png">
+</head>
+<body>
+    <header>
+        <input type="checkbox" class="headerCheckbox" id="menu">
+        <label for="menu" class="headerOpen-nav-button" role="button">=</label>
+
+        <div class="headerLogo">
+            <a href="index.html"><img src="img/logo.png" alt="No tiene internet" class="logo"></a>
+        </div>
+
+        <nav class="navbar">
+            <ul class="navbarList">
+                <a href="index.html"><button class="btn btn-1">Inicio</button></a>
+                <a href="#catalogo"><button class="btn btn-1">Catálogo</button></a>
+                <a href="nosotros.html"><button class="btn btn-1">Nosotros</button></a>
+                <a href="#contacto"><button class="btn btn-1">Contacto</button></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio" class="section">
+            <h2>Bienvenidos a Tienda de Ropa Exclusiva</h2>
+            <p>Tu destino para las últimas tendencias en moda y estilo. Aquí encontrarás ropa de la mejor calidad para todas las ocasiones.</p>
+        </section>
+
+        <section id="catalogo" class="section">
+            <h2>Catálogo</h2>
+            <div class="productos">
+                <div class="producto">
+                    <img src="img/camisa-casual.png" alt="Camiseta Casual">
+                    <h3>Camiseta Casual</h3>
+                    <p>Cómoda y perfecta para el día a día.</p>
+                    <p><strong>Precio:</strong> $25.000</p>
+                </div>
+                <div class="producto">
+                    <img src="img/jeans.png" alt="Jeans Modernos">
+                    <h3>Jeans Modernos</h3>
+                    <p>Clásicos y elegantes, diseñados para durar.</p>
+                    <p><strong>Precio:</strong> $50.000</p>
+                </div>
+                <div class="producto">
+                    <img src="img/chaqueta.png" alt="Chaqueta Elegante">
+                    <h3>Chaqueta Elegante</h3>
+                    <p>Ideal para eventos especiales o días fríos.</p>
+                    <p><strong>Precio:</strong> $70.000</p>
+                </div>
+                <div class="producto">
+                    <img src="img/vestido.png" alt="Vestido de Verano">
+                    <h3>Vestido de Verano</h3>
+                    <p>Perfecto para días cálidos y soleados.</p>
+                    <p><strong>Precio:</strong> $45.000</p>
+                </div>
+                <div class="producto">
+                    <img src="img/zapatos.png" alt="Zapatos Elegantes">
+                    <h3>Zapatos Elegantes</h3>
+                    <p>Diseño cómodo y sofisticado.</p>
+                    <p><strong>Precio:</strong> $85.000</p>
+                </div>
+                <div class="producto">
+                    <img src="img/sudadera.png" alt="Sudadera Deportiva">
+                    <h3>Sudadera Deportiva</h3>
+                    <p>Ideal para entrenamientos y días cómodos.</p>
+                    <p><strong>Precio:</strong> $55.000</p>
+                </div>
+                <div class="producto">
+                    <img src="img/blusa.png" alt="Blusa Elegante">
+                    <h3>Blusa Elegante</h3>
+                    <p>Perfecta para ocasiones especiales.</p>
+                    <p><strong>Precio:</strong> $35.000</p>
+                </div>
+                <div class="producto">
+                    <img src="img/gorra.png" alt="Gorra Casual">
+                    <h3>Gorra Casual</h3>
+                    <p>Un accesorio ideal para cualquier outfit.</p>
+                    <p><strong>Precio:</strong> $20.000</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section">
+            <h2>Contáctanos</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre aquí" required>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Tienda de Ropa Exclusiva. Todos los derechos reservados.</p>
+        <p>Teléfono: +57 310 123 4567 | Email: contacto@tiendaderopa.com</p>
+    </footer>
+</body>
+</html>
