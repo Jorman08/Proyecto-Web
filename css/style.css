@@ -29,6 +29,12 @@ body {
     width: 50px;
 }
 
+@media (min-width: 600px) {
+    .iconWhatsapp {
+        bottom: 0;
+    }
+}
+
 
 /* Header Section */
 
@@ -48,6 +54,7 @@ header {
     position: absolute;
     right: 10px;
     z-index: 20;
+    cursor: pointer;
 }
 
 .headerOpen-nav-button:hover {
@@ -86,6 +93,7 @@ header .headerCheckbox {
     letter-spacing: 3px;
     position: relative;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .btn-1 {
@@ -170,7 +178,7 @@ header .headerCheckbox {
 /* Main section */
 
 main {
-    padding: 40px;
+    padding: 30px;
 }
 
 .section {
@@ -179,18 +187,18 @@ main {
     text-align: center;
     border-bottom: 2px solid #aaa;
 
-        h2,
-        p {
-            padding-top: 40px;
-        }
+    h2,
+    p {
+        padding-top: 40px;
+    }
 
-        h2 {
-            font-size: 25px;
-        }
+    h2 {
+        font-size: 25px;
+    }
 
-        p {
-            font-size: 20px;
-        }
+    p {
+        font-size: 20px;
+    }
 }
 
 .section-2 {
@@ -198,14 +206,14 @@ main {
     padding-bottom: 80px;
 
 
-        h2 {
-            padding: 50px 0;
-        }
+    h2 {
+        padding: 50px 0;
+    }
 
-        h3,
-        p {
-            padding-top: 12px;
-        }
+    h3,
+    p {
+        padding-top: 12px;
+    }
 }
 
 .productos {
@@ -253,7 +261,7 @@ main {
     .container-contact {
         padding: 20px;
         width: 500px;
-        background: linear-gradient( #000 92%, #ccc 50%);
+        background: linear-gradient(#000 92%, #ccc 50%);
         margin: auto;
         border-radius: 40% 2%;
         transition: 20s;
@@ -279,7 +287,7 @@ form label {
 }
 
 form input,
-form textarea{
+form textarea {
     width: 100%;
     margin-bottom: 40px;
     padding: 10px;
@@ -293,7 +301,7 @@ form textarea{
 
 
 form button {
-    background: linear-gradient( #000 85%, #ccc 50%);
+    background: linear-gradient(#000 85%, #ccc 50%);
     box-shadow: 0 0 10px #333;
     color: #fff;
     border: none;
@@ -314,6 +322,27 @@ form button:hover {
     .productos {
         flex-direction: column;
         align-items: center;
+    }
+
+    .section-3 {
+        justify-items: center;
+    }
+
+    .container-contact {
+        width: 50%;
+        border-radius: 10px;
+        /* Mejor ajuste en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .container-contact {
+        width: 50%;
+        padding: 10px;
+    }
+
+    form {
+        max-width: 100%;
     }
 }
 
@@ -366,7 +395,9 @@ footer {
     color: #555;
 }
 
-.footerContact, .footerContact h4, .footerContact p {
+.footerContact,
+.footerContact h4,
+.footerContact p {
     margin-top: 2%;
 }
 
@@ -384,4 +415,3 @@ footer {
         font-size: 1.2rem;
     }
 }
-
